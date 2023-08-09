@@ -124,7 +124,7 @@ class FM_tranmit(gr.top_block, Qt.QWidget):
         self._qtgui_waterfall_sink_x_0_win = sip.wrapinstance(self.qtgui_waterfall_sink_x_0.qwidget(), Qt.QWidget)
 
         self.top_layout.addWidget(self._qtgui_waterfall_sink_x_0_win)
-        self.network_tcp_source_0 = network.tcp_source.tcp_source(itemsize=gr.sizeof_gr_complex*1,addr='192.168.65.33',port=8080,server=True)
+        self.network_tcp_source_0 = network.tcp_source.tcp_source(itemsize=gr.sizeof_gr_complex*1,addr='address',port="port",server=True)
 
 
         ##################################################
